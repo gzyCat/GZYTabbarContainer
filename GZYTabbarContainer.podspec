@@ -81,7 +81,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/gzyCat/GZYTabbarContainer.git", :commit => "8363209cacb4ba58f8cf02e837f4878808115b5c" ,:tag=s.version}
+  s.source       = { :git => "https://github.com/gzyCat/GZYTabbarContainer.git", :commit => "8363209cacb4ba58f8cf02e837f4878808115b5c" ,:tag=>s.version}
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

@@ -30,7 +30,6 @@
 
 - (void)swipe:(UISwipeGestureRecognizer *)swipe
 {
-    NSLog(@"----UISwipeGestureRecognizer- %ld- %ld",swipe.direction,swipe.state);
     
     if (self.swipeGestureBlock) {
         self.swipeGestureBlock(swipe);
@@ -41,7 +40,6 @@
 {
     if (pan.state == UIGestureRecognizerStateBegan) {
         self.gestureRecognizedBlock(pan);
-        NSLog(@"----UIPanGestureRecognizer begin----");
     }else if (pan.state == UIGestureRecognizerStateChanged)
     {
         CGPoint translation = [pan translationInView:pan.view];

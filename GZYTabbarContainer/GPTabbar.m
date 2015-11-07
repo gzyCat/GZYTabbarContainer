@@ -35,7 +35,6 @@ static CGFloat const kButtonSlotHeight = 44;
     NSParameterAssert([buttonItems count] > 0);
     _buttonItems = buttonItems;
     
-#warning 设置的button frame 为固定值，后期需要优化
     CGFloat itemY =0;
     CGFloat itemW = Tabbar_Width/buttonItems.count;
     CGFloat itemH = kButtonSlotHeight;
@@ -67,7 +66,6 @@ static CGFloat const kButtonSlotHeight = 44;
 - (void)setSelectIndex:(NSInteger)selectIndex
 {
     _selectIndex = selectIndex;
-    NSLog(@"--setSelectIndex %ld",selectIndex);
     UIButton *btn = self.buttonItems[selectIndex];
     [self.buttonItems enumerateObjectsUsingBlock:^(UIButton *button, NSUInteger idx, BOOL *stop) {
         button.selected = (self.buttonItems[idx] == btn);

@@ -73,7 +73,6 @@ static CGFloat const kBarHeight = 44;
         
         BOOL leftToRight = [recognizer velocityInView:recognizer.view].x > 0;
         NSInteger currentVCIndex = [self.privateTabbarView selectIndex];
-        NSLog(@"currentVCIndex----%ld",currentVCIndex);
         if (leftToRight && currentVCIndex > 0 ) {
             [self.privateTabbarView setSelectedButtonAtIndex:currentVCIndex -1];
             
