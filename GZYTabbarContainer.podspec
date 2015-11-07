@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "GZYTabbarContainer"
-  s.version      = "0.1.0"
+  s.version      = "0.2.0"
   s.summary      = "最近一段时间有时间，将自己整理的文件上传下。"
 
   # This description is used to generate tags and improve search results.
